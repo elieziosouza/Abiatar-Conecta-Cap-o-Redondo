@@ -1,0 +1,6 @@
+{
+  "name": "Abiatar Conecta - Lançamento Capão Redondo",
+  "description": "Apartamentos de 2 dormitórios com suíte e giardino a 5 min do Metrô Capão Redondo. Mais de 50 itens de lazer e condições Minha Casa Minha Vida.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
