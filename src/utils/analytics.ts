@@ -137,7 +137,7 @@ export function trackLeadSubmission(leadData: {
   whatsapp: string;
   unitInterest?: string;
 }) {
-  // Google Analytics 4 event
+  // Google Analytics 4 & Google Ads event
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('event', 'generate_lead', {
       event_category: 'Leads',
@@ -148,6 +148,14 @@ export function trackLeadSubmission(leadData: {
         lead_name: leadData.name,
         lead_interest: leadData.unitInterest
       }
+    });
+
+    // Google Ads conversion event
+    window.gtag('event', 'conversion', {
+      send_to: 'AW-17116199141',
+      value: 100.0,
+      currency: 'BRL',
+      transaction_id: 'lead_' + Date.now()
     });
   }
 
