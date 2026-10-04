@@ -32,9 +32,16 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToPlans }) => {
               Conecte sua vida ao seu <span className="text-amber-700">novo apartamento</span> a 5 min do metrô.
             </h1>
 
-            {/* Subtitle */}
+            {/* Subtitle with discreet natural backlink */}
             <p className="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
-              O <strong>Abiatar Conecta</strong> reúne 2 dormitórios com plantas inteligentes, lazer de clube completo em 3 pavimentos e as facilidades do programa <strong>Minha Casa Minha Vida</strong>.
+              O{' '}
+              <a
+                href="https://ezbrokers.com.br/imovel/abiatar-conecta-capao-redondo/"
+                className="text-inherit hover:text-slate-900 transition-colors underline decoration-stone-300 hover:decoration-stone-600 underline-offset-4"
+              >
+                <strong className="text-slate-900 font-bold">Abiatar Conecta</strong>
+              </a>{' '}
+              reúne apartamentos de 2 dormitórios com plantas inteligentes, lazer de clube completo em 3 pavimentos e todas as facilidades de financiamento do programa <strong>Minha Casa Minha Vida</strong>.
             </p>
 
             {/* Official Facade Preview Frame (Original Photo) */}
@@ -85,10 +92,10 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToPlans }) => {
             <div className="pt-2">
               <button
                 onClick={onScrollToPlans}
-                className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-700 hover:text-slate-900 underline decoration-amber-600/60 underline-offset-4 transition"
+                className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-700 hover:text-slate-900 underline decoration-amber-600/60 underline-offset-4 transition"
               >
                 <span>Ver opções de plantas originais (35 a 65 m²)</span>
-                <ChevronRight className="w-4 h-4 text-amber-600" />
+                <ChevronRight className="w-3.5 h-3.5 text-amber-600" />
               </button>
             </div>
           </div>

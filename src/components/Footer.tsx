@@ -24,7 +24,7 @@ export const Footer: React.FC<FooterProps> = ({ onSecretAdminTrigger }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Top Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-200">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-stone-200">
           
           {/* Brand info */}
           <div className="lg:col-span-2 space-y-4">
@@ -83,21 +83,7 @@ export const Footer: React.FC<FooterProps> = ({ onSecretAdminTrigger }) => {
             </ul>
           </div>
 
-          {/* Navigation Links */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900">
-              Navegação Rápida
-            </h4>
-            <ul className="space-y-2 text-xs">
-              <li><a href="#sobre" className="hover:text-amber-700 transition">O Projeto</a></li>
-              <li><a href="#lazer" className="hover:text-amber-700 transition">Lazer Club (+50 Itens)</a></li>
-              <li><a href="#plantas" className="hover:text-amber-700 transition">Plantas & Metragens</a></li>
-              <li><a href="#localizacao" className="hover:text-amber-700 transition">Localização & Metrô</a></li>
-              <li><a href="#simulador" className="hover:text-amber-700 transition">Simulador MCMV</a></li>
-            </ul>
-          </div>
-
-          {/* Plantão de Atendimento (Replacing the public admin column) */}
+          {/* Plantão de Atendimento */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 flex items-center gap-1.5">
               <Clock className="w-3.5 h-3.5 text-amber-600" />

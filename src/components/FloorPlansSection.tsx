@@ -36,8 +36,15 @@ export const FloorPlansSection: React.FC<FloorPlansProps> = ({ onSelectPlan }) =
           <h2 className="text-3xl sm:text-4xl font-extrabold font-display tracking-tight text-slate-900 mb-4">
             Espaços inteligentes desenhados para o seu bem-estar
           </h2>
-          <p className="text-sm sm:text-base text-slate-600">
-            De 34,99 m² a 65,27 m² com 2 dormitórios, opções de suíte e unidades giardino com quintal privativo.
+          <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
+            Plantas modernas de 34,99 m² a 65,27 m² com 2 dormitórios, opções com suíte e unidades giardino com quintal privativo, seguindo as melhores tendências de arquitetura para{' '}
+            <a
+              href="https://ezbrokers.com.br/imovel/up-sports-home-1-e-2-dormitorios/"
+              className="text-inherit hover:text-slate-900 transition-colors underline decoration-stone-300 hover:decoration-stone-600 underline-offset-4"
+            >
+              1 e 2 dormitórios
+            </a>{' '}
+            com lazer de clube integrado e mobilidade urbana.
           </p>
         </div>
 
