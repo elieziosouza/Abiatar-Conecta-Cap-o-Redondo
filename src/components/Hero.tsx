@@ -49,26 +49,26 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToPlans }) => {
               <img
                 src={OFFICIAL_IMAGES.heroFachada}
                 alt="Perspectiva original da fachada oficial do Abiatar Conecta em São Paulo"
-                className="w-full h-64 sm:h-72 object-cover object-center group-hover:scale-102 transition-transform duration-500"
+                className="w-full h-52 sm:h-72 object-cover object-center group-hover:scale-102 transition-transform duration-500"
               />
-              <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-md text-[11px] font-semibold text-slate-800 border border-stone-200 shadow-sm">
+              <div className="absolute bottom-2.5 left-2.5 sm:bottom-3 sm:left-3 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded text-[10px] sm:text-[11px] font-semibold text-slate-800 border border-stone-200 shadow-sm max-w-[calc(100%-1.25rem)] truncate">
                 Foto Oficial da Fachada Residencial · 3 Torres
               </div>
             </div>
 
             {/* Key Value Metrics */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-1">
-              <div className="border-l-2 border-amber-600 pl-3.5 py-1">
-                <span className="block text-2xl font-extrabold text-slate-900 font-display tabular-nums">5 MIN</span>
-                <span className="text-xs text-slate-500">A pé da Estação Capão Redondo</span>
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-1">
+              <div className="border-l-2 border-amber-600 pl-2.5 sm:pl-3.5 py-0.5 sm:py-1">
+                <span className="block text-lg sm:text-2xl font-extrabold text-slate-900 font-display tabular-nums">5 MIN</span>
+                <span className="text-[11px] sm:text-xs text-slate-500 leading-tight block">A pé do Metrô</span>
               </div>
-              <div className="border-l-2 border-amber-600 pl-3.5 py-1">
-                <span className="block text-2xl font-extrabold text-slate-900 font-display tabular-nums">+50 ITENS</span>
-                <span className="text-xs text-slate-500">Lazer Club em 3 pavimentos</span>
+              <div className="border-l-2 border-amber-600 pl-2.5 sm:pl-3.5 py-0.5 sm:py-1">
+                <span className="block text-lg sm:text-2xl font-extrabold text-slate-900 font-display tabular-nums">+50 ITENS</span>
+                <span className="text-[11px] sm:text-xs text-slate-500 leading-tight block">Lazer em 3 Pav.</span>
               </div>
-              <div className="border-l-2 border-amber-600 pl-3.5 py-1 col-span-2 sm:col-span-1">
-                <span className="block text-2xl font-extrabold text-slate-900 font-display tabular-nums">MCMV</span>
-                <span className="text-xs text-slate-500">Subsídio Caixa + Use seu FGTS</span>
+              <div className="border-l-2 border-amber-600 pl-2.5 sm:pl-3.5 py-0.5 sm:py-1">
+                <span className="block text-lg sm:text-2xl font-extrabold text-slate-900 font-display tabular-nums">MCMV</span>
+                <span className="text-[11px] sm:text-xs text-slate-500 leading-tight block">Subsídio Caixa</span>
               </div>
             </div>
 

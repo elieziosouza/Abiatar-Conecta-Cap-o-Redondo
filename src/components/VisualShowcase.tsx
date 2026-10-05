@@ -131,12 +131,12 @@ export const VisualShowcase: React.FC<{ onSelectSpace: (title: string) => void }
         </div>
 
         {/* Bento Grid Gallery with Light Minimalist Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-5">
           {GALLERY_ITEMS.map((item, index) => (
             <div
               key={item.id}
               onClick={() => openLightbox(index)}
-              className={`group relative rounded-2xl overflow-hidden cursor-pointer border border-stone-200/80 bg-stone-100 hover:border-amber-600/50 transition duration-300 ${item.aspect} min-h-[260px] sm:min-h-[320px] shadow-sm hover:shadow-md`}
+              className={`group relative rounded-2xl overflow-hidden cursor-pointer border border-stone-200/80 bg-stone-100 hover:border-amber-600/50 transition duration-300 ${item.aspect} min-h-[280px] sm:min-h-[320px] shadow-sm hover:shadow-md`}
             >
               <img
                 src={item.image}
@@ -145,24 +145,24 @@ export const VisualShowcase: React.FC<{ onSelectSpace: (title: string) => void }
               />
               
               {/* Refined gradient scrim for clean text contrast */}
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/35 to-transparent" />
 
               {/* Tag text metadata */}
-              <div className="absolute top-4 left-4 text-[11px] font-semibold text-white/90 bg-slate-900/60 backdrop-blur-md px-2.5 py-1 rounded-md uppercase tracking-wider">
+              <div className="absolute top-3 left-3 sm:top-4 sm:left-4 text-[10px] sm:text-[11px] font-semibold text-white/95 bg-slate-900/70 backdrop-blur-md px-2.5 py-1 rounded-md uppercase tracking-wider border border-white/10">
                 {item.tag}
               </div>
 
               {/* Action zoom icon */}
-              <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/80 backdrop-blur-md text-slate-900 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-sm">
+              <div className="absolute top-3 right-3 sm:top-4 sm:right-4 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-white/80 backdrop-blur-md text-slate-900 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-sm">
                 <Maximize2 className="w-3.5 h-3.5" />
               </div>
 
               {/* Bottom text */}
-              <div className="absolute bottom-4 left-4 right-4 text-white">
-                <h3 className="text-base sm:text-lg font-bold font-display leading-tight mb-1">
+              <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 text-white">
+                <h3 className="text-sm sm:text-base md:text-lg font-bold font-display leading-snug mb-0.5 sm:mb-1">
                   {item.title}
                 </h3>
-                <p className="text-xs text-white/80 line-clamp-1">
+                <p className="text-[11px] sm:text-xs text-white/80 line-clamp-2">
                   {item.subtitle}
                 </p>
               </div>
@@ -174,13 +174,13 @@ export const VisualShowcase: React.FC<{ onSelectSpace: (title: string) => void }
 
       {/* Lightbox Modal with Light Surfaces */}
       {activeModalIndex !== null && (
-        <div className="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6">
-          <div className="relative max-w-5xl w-full bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
+        <div className="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-2.5 sm:p-6">
+          <div className="relative max-w-5xl w-full bg-white border border-stone-200 rounded-2xl overflow-hidden shadow-2xl flex flex-col max-h-[92vh]">
             
             {/* Close button */}
             <button
               onClick={closeLightbox}
-              className="absolute top-3 right-3 z-20 p-2 text-white bg-slate-900/70 hover:bg-slate-900 rounded-full"
+              className="absolute top-2.5 right-2.5 z-30 p-2 text-white bg-slate-900/80 hover:bg-slate-900 rounded-full shadow-md"
               aria-label="Fechar galeria"
             >
               <X className="w-5 h-5" />
@@ -189,28 +189,28 @@ export const VisualShowcase: React.FC<{ onSelectSpace: (title: string) => void }
             {/* Navigation buttons */}
             <button
               onClick={prevImage}
-              className="absolute left-3 top-1/2 -translate-y-1/2 z-20 p-2 text-white bg-slate-900/70 hover:bg-slate-900 rounded-full"
+              className="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 z-20 p-2 text-white bg-slate-900/70 hover:bg-slate-900 rounded-full shadow-md"
               aria-label="Anterior"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={nextImage}
-              className="absolute right-3 top-1/2 -translate-y-1/2 z-20 p-2 text-white bg-slate-900/70 hover:bg-slate-900 rounded-full"
+              className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 z-20 p-2 text-white bg-slate-900/70 hover:bg-slate-900 rounded-full shadow-md"
               aria-label="Próximo"
             >
               <ChevronRight className="w-5 h-5" />
             </button>
 
-            <div className="flex-1 bg-stone-900 flex items-center justify-center min-h-[350px] sm:min-h-[460px] overflow-hidden">
+            <div className="flex-1 bg-stone-900 flex items-center justify-center min-h-[260px] sm:min-h-[460px] overflow-hidden">
               <img
                 src={GALLERY_ITEMS[activeModalIndex].image}
                 alt={GALLERY_ITEMS[activeModalIndex].title}
-                className="max-h-[62vh] max-w-full object-contain"
+                className="max-h-[58vh] max-w-full object-contain"
               />
             </div>
 
-            <div className="p-5 bg-white border-t border-stone-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="p-4 sm:p-5 bg-white border-t border-stone-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 overflow-y-auto">
               <div>
                 <span className="text-xs uppercase tracking-wider text-amber-700 font-semibold block mb-0.5">
                   {GALLERY_ITEMS[activeModalIndex].tag} · {activeModalIndex + 1} de {GALLERY_ITEMS.length}

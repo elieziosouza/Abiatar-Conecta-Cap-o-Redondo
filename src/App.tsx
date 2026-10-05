@@ -12,6 +12,7 @@ import { FloorPlansSection } from './components/FloorPlansSection';
 import { MCMVSimulator } from './components/MCMVSimulator';
 import { FamilySection } from './components/FamilySection';
 import { LocationSection } from './components/LocationSection';
+import { FAQSection } from './components/FAQSection';
 import { ConversionBanner } from './components/ConversionBanner';
 import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
@@ -102,7 +103,10 @@ export default function App() {
         {/* 7. Strategic Location (5 min walk to Capão Redondo Metro Station) */}
         <LocationSection />
 
-        {/* 8. Conversion Section & Lead Capture Form */}
+        {/* 8. Frequently Asked Questions (MCMV, Pagamento, Localização) */}
+        <FAQSection onSimulateClick={() => scrollToForm('Dúvidas no FAQ / Simulação MCMV')} />
+
+        {/* 9. Conversion Section & Lead Capture Form */}
         <ConversionBanner
           formRef={formRef}
           selectedInterest={selectedInterest}

@@ -16,26 +16,26 @@ export const FamilySection: React.FC<FamilySectionProps> = ({ onSimulateClick })
           
           {/* Left Column: Photo of Happy Family in Bright Sunlit Apartment */}
           <div className="lg:col-span-6 relative">
-            <div className="relative rounded-3xl overflow-hidden border border-stone-200 shadow-xl bg-stone-100 group">
+            <div className="relative rounded-3xl overflow-hidden border border-stone-200 shadow-lg bg-stone-100 group">
               <img
                 src={happyFamilyImg}
                 alt="Família feliz celebrando a conquista do apartamento no Abiatar Conecta"
                 className="w-full h-auto object-cover object-center group-hover:scale-102 transition-transform duration-700"
               />
-              
-              {/* Subtle floating badge */}
-              <div className="absolute bottom-4 left-4 right-4 sm:right-auto bg-white/95 backdrop-blur-md border border-stone-200/80 rounded-2xl p-4 shadow-lg flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
-                  <Heart className="w-5 h-5 fill-current" />
-                </div>
-                <div>
-                  <span className="text-xs font-bold text-slate-900 block font-display">
-                    O Seu Primeiro Lar Próprio
-                  </span>
-                  <span className="text-[11px] text-slate-500 block">
-                    Parcelas que cabem no orçamento familiar
-                  </span>
-                </div>
+            </div>
+
+            {/* Credibility badge - clean below on mobile, floating on desktop */}
+            <div className="mt-3.5 sm:mt-0 sm:absolute sm:bottom-4 sm:left-4 sm:right-auto bg-white/95 sm:backdrop-blur-md border border-stone-200/90 rounded-2xl p-3 sm:p-4 shadow-sm sm:shadow-lg flex items-center gap-3">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+                <Heart className="w-4 h-4 sm:w-5 sm:h-5 fill-current" />
+              </div>
+              <div>
+                <span className="text-xs font-bold text-slate-900 block font-display">
+                  O Seu Primeiro Lar Próprio
+                </span>
+                <span className="text-[11px] text-slate-500 block">
+                  Parcelas que cabem no orçamento familiar
+                </span>
               </div>
             </div>
 

@@ -49,26 +49,26 @@ export const FloorPlansSection: React.FC<FloorPlansProps> = ({ onSelectPlan }) =
         </div>
 
         {/* Plan Selector Buttons */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto mb-10">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 max-w-4xl mx-auto mb-8 sm:mb-10">
           {FLOOR_PLANS.map((plan) => {
             const isSelected = plan.id === selectedPlanId;
             return (
               <button
                 key={plan.id}
                 onClick={() => handlePlanClick(plan)}
-                className={`p-4 rounded-xl text-left border transition-all ${
+                className={`p-3 sm:p-4 rounded-xl text-left border transition-all ${
                   isSelected
                     ? 'bg-amber-50/70 border-amber-600 text-slate-900 shadow-sm'
                     : 'bg-stone-50 border-stone-200 text-slate-600 hover:text-slate-900 hover:bg-white'
                 }`}
               >
-                <div className="text-xs font-semibold text-amber-700 uppercase tracking-wider mb-1">
+                <div className="text-[11px] sm:text-xs font-bold text-amber-700 uppercase tracking-wider mb-0.5">
                   {plan.area}
                 </div>
-                <div className="font-bold text-sm text-slate-900 font-display">
+                <div className="font-bold text-xs sm:text-sm text-slate-900 font-display truncate">
                   {plan.name}
                 </div>
-                <div className="text-[11px] text-slate-500 mt-1 flex items-center gap-3">
+                <div className="text-[10px] sm:text-[11px] text-slate-500 mt-1 flex items-center gap-2.5">
                   <span className="flex items-center gap-1">
                     <Bed className="w-3 h-3" /> {plan.bedrooms} dorms
                   </span>
@@ -83,32 +83,37 @@ export const FloorPlansSection: React.FC<FloorPlansProps> = ({ onSelectPlan }) =
 
         {/* Selected Plan Details & Official Floor Plan Image */}
         <div className="bg-[#faf9f6] border border-stone-200 rounded-2xl overflow-hidden shadow-sm">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 sm:p-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center p-4 sm:p-10">
             
             {/* Left: Original Official Floor Plan Image */}
-            <div className="lg:col-span-6 bg-white rounded-xl p-6 border border-stone-200 flex flex-col items-center justify-center relative min-h-[380px] shadow-sm">
+            <div className="lg:col-span-6 bg-white rounded-xl p-4 sm:p-6 border border-stone-200 flex flex-col items-center justify-center relative min-h-[300px] sm:min-h-[380px] shadow-sm w-full">
               
-              <div className="absolute top-3 left-3 text-[11px] font-semibold text-slate-700 bg-stone-100 px-2.5 py-1 rounded border border-stone-200">
-                PLANTA OFICIAL ABIATAR CONECTA
+              <div className="flex items-center justify-between w-full mb-2">
+                <span className="text-[10px] sm:text-[11px] font-bold text-slate-700 bg-stone-100 px-2.5 py-1 rounded border border-stone-200 uppercase tracking-wider">
+                  Implantação do Abiatar Conecta
+                </span>
+                <span className="text-[10px] text-amber-700 font-semibold flex items-center gap-1 sm:hidden">
+                  <Eye className="w-3 h-3" /> Toque para zoom
+                </span>
               </div>
 
               <div
                 onClick={() => setZoomImage(planImage)}
-                className="relative cursor-pointer group w-full flex items-center justify-center p-2"
+                className="relative cursor-pointer group w-full flex items-center justify-center p-1 sm:p-2"
               >
                 <img
                   src={planImage}
-                  alt={`Planta original oficial: ${currentPlan.name}`}
-                  className="max-h-[340px] w-auto object-contain rounded-lg group-hover:scale-102 transition-transform duration-300"
+                  alt={`Implantação do Abiatar Conecta: ${currentPlan.name}`}
+                  className="max-h-[280px] sm:max-h-[340px] w-auto object-contain rounded-lg group-hover:scale-102 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-slate-900/10 opacity-0 group-hover:opacity-100 rounded-lg flex items-center justify-center transition-opacity">
+                <div className="hidden sm:flex absolute inset-0 bg-slate-900/10 opacity-0 group-hover:opacity-100 rounded-lg items-center justify-center transition-opacity">
                   <span className="bg-white text-slate-900 px-3 py-1.5 rounded-lg text-xs font-bold shadow-md flex items-center gap-1.5">
                     <Eye className="w-3.5 h-3.5" /> Clique para ampliar planta
                   </span>
                 </div>
               </div>
 
-              <span className="text-[11px] text-slate-400 mt-3 block text-center">
+              <span className="text-[10px] sm:text-[11px] text-slate-400 mt-2 block text-center">
                 *Imagem oficial extraída do projeto da Abiatar Construtora e Incorporadora.
               </span>
             </div>

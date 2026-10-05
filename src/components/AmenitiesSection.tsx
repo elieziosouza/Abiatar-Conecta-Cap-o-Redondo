@@ -40,14 +40,14 @@ export const AmenitiesSection: React.FC<AmenitiesProps> = ({ onInterestClick }) 
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex flex-wrap items-center justify-center gap-1.5 p-1 bg-stone-200/60 rounded-xl max-w-2xl mx-auto mb-10">
+        <div className="flex flex-wrap items-center justify-center gap-1.5 p-1 bg-stone-200/60 rounded-xl max-w-2xl mx-auto mb-8 sm:mb-10">
           {categories.map((cat) => {
             const isActive = activeTab === cat.id;
             return (
               <button
                 key={cat.id}
                 onClick={() => setActiveTab(cat.id as any)}
-                className={`px-3.5 py-2 text-xs font-semibold rounded-lg transition-all ${
+                className={`px-2.5 sm:px-3.5 py-1.5 sm:py-2 text-[11px] sm:text-xs font-semibold rounded-lg transition-all ${
                   isActive
                     ? 'bg-white text-slate-900 shadow-sm'
                     : 'text-slate-600 hover:text-slate-900 hover:bg-white/50'
@@ -60,11 +60,11 @@ export const AmenitiesSection: React.FC<AmenitiesProps> = ({ onInterestClick }) 
         </div>
 
         {/* Amenities Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-5">
           {filteredAmenities.map((amenity: Amenity) => (
             <div
               key={amenity.id}
-              className="bg-white border border-stone-200/90 hover:border-amber-600/40 rounded-xl p-5 transition duration-200 flex flex-col justify-between shadow-sm hover:shadow group"
+              className="bg-white border border-stone-200/90 hover:border-amber-600/40 rounded-xl p-4 sm:p-5 transition duration-200 flex flex-col justify-between shadow-sm hover:shadow group"
             >
               <div>
                 <div className="flex items-center gap-2.5 mb-2">
@@ -75,12 +75,12 @@ export const AmenitiesSection: React.FC<AmenitiesProps> = ({ onInterestClick }) 
                     {amenity.name}
                   </h3>
                 </div>
-                <p className="text-xs text-slate-500 leading-relaxed pl-7.5">
+                <p className="text-xs text-slate-500 leading-relaxed pl-8">
                   {amenity.description}
                 </p>
               </div>
 
-              <div className="pt-3 pl-7.5 mt-2 border-t border-stone-100 flex items-center justify-between">
+              <div className="pt-3 pl-8 mt-2 border-t border-stone-100 flex items-center justify-between">
                 <span className="text-[11px] text-slate-400 capitalize">
                   {amenity.category}
                 </span>
@@ -97,12 +97,12 @@ export const AmenitiesSection: React.FC<AmenitiesProps> = ({ onInterestClick }) 
         </div>
 
         {/* 3 Floors Breakdown Banner with Official Aerial Photo */}
-        <div className="mt-12 bg-white border border-stone-200 rounded-2xl p-6 sm:p-8 flex flex-col lg:flex-row items-center justify-between gap-6 shadow-sm">
+        <div className="mt-10 sm:mt-12 bg-white border border-stone-200 rounded-2xl p-5 sm:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5 sm:gap-6 shadow-sm">
           <div className="space-y-1.5">
             <span className="text-xs font-semibold text-amber-700 uppercase tracking-wider">
               Conceito Arquitetônico Inteligente
             </span>
-            <h4 className="text-xl sm:text-2xl font-bold font-display text-slate-900">
+            <h4 className="text-lg sm:text-2xl font-bold font-display text-slate-900">
               Lazer distribuído estrategicamente em 3 níveis
             </h4>
             <p className="text-xs sm:text-sm text-slate-600 max-w-xl">
@@ -110,15 +110,15 @@ export const AmenitiesSection: React.FC<AmenitiesProps> = ({ onInterestClick }) 
             </p>
           </div>
           
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end pt-2 sm:pt-0 border-t sm:border-t-0 border-stone-100">
             <img
               src={OFFICIAL_IMAGES.redarioZen}
               alt="Redário Zen do Abiatar Conecta"
-              className="w-20 h-20 rounded-xl object-cover border border-stone-200 hidden sm:block"
+              className="w-14 h-14 sm:w-20 sm:h-20 rounded-xl object-cover border border-stone-200 shrink-0"
             />
             <button
               onClick={() => onInterestClick('Memorial Descritivo do Lazer')}
-              className="bg-slate-900 hover:bg-slate-800 text-white font-bold px-5 py-3 rounded-xl text-xs sm:text-sm transition shadow-sm whitespace-nowrap"
+              className="bg-slate-900 hover:bg-slate-800 text-white font-bold px-4 py-3 sm:px-5 sm:py-3 rounded-xl text-xs sm:text-sm transition shadow-sm whitespace-nowrap"
             >
               Baixar Memorial Descritivo
             </button>

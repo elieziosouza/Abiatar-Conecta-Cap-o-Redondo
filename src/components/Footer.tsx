@@ -20,7 +20,7 @@ export const Footer: React.FC<FooterProps> = ({ onSecretAdminTrigger }) => {
   };
 
   return (
-    <footer className="bg-white text-slate-600 border-t border-stone-200/90 pt-16 pb-12">
+    <footer className="bg-white text-slate-600 border-t border-stone-200/90 pt-12 sm:pt-16 pb-24 sm:pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Top Grid */}

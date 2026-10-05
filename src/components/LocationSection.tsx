@@ -77,23 +77,23 @@ export const LocationSection: React.FC = () => {
                 <img
                   src={OFFICIAL_IMAGES.implantacaoGeral}
                   alt="Implantação aérea do Abiatar Conecta"
-                  className="w-full h-80 object-cover object-center group-hover:scale-103 transition-transform duration-500"
+                  className="w-full h-60 sm:h-80 object-cover object-center group-hover:scale-103 transition-transform duration-500"
                 />
-                <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-md text-xs font-semibold text-slate-900 border border-stone-200 shadow-sm flex items-center gap-2">
-                  <MapPin className="w-3.5 h-3.5 text-amber-600" />
-                  <span>Implantação do Terreno · Metrô a 5 min</span>
+                <div className="absolute bottom-2.5 left-2.5 sm:bottom-3 sm:left-3 bg-white/95 backdrop-blur-md px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-md text-[11px] sm:text-xs font-semibold text-slate-900 border border-stone-200 shadow-sm flex items-center gap-1.5 max-w-[calc(100%-1.25rem)] truncate">
+                  <MapPin className="w-3.5 h-3.5 text-amber-600 shrink-0" />
+                  <span className="truncate">Implantação · Metrô a 5 min</span>
                 </div>
               </div>
 
               {/* Bottom card action */}
-              <div className="p-5 bg-white border-t border-stone-200 flex flex-col sm:flex-row items-center justify-between gap-3">
-                <div>
+              <div className="p-4 sm:p-5 bg-white border-t border-stone-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-left">
+                <div className="w-full sm:w-auto">
                   <h4 className="text-sm font-bold text-slate-900">Capão Redondo · Zona Sul</h4>
-                  <p className="text-xs text-slate-500">Próximo ao terminal de ônibus e principais vias de acesso</p>
+                  <p className="text-xs text-slate-500 mt-0.5">Próximo ao terminal de ônibus e principais vias de acesso</p>
                 </div>
                 <button
                   onClick={openLocationOnMap}
-                  className="bg-stone-100 hover:bg-stone-200 text-slate-900 text-xs font-semibold px-4 py-2.5 rounded-xl border border-stone-300 transition flex items-center gap-1.5 whitespace-nowrap"
+                  className="w-full sm:w-auto justify-center bg-stone-100 hover:bg-stone-200 text-slate-900 text-xs font-semibold px-4 py-2.5 rounded-xl border border-stone-300 transition flex items-center gap-1.5 whitespace-nowrap"
                 >
                   <Navigation className="w-3.5 h-3.5 text-amber-600" />
                   <span>Ver Rota no Google Maps</span>
