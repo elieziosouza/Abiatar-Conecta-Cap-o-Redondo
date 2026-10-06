@@ -33,6 +33,7 @@ export const PROJECT_DETAILS = {
   launchDate: 'Lançamento Exclusivo',
   realtorName: 'Eliezio Corretor de Imóveis',
   creci: 'CRECI-SP: 209.709',
+  googleReviewsUrl: 'https://g.page/r/CcW9DxIS88qfEAE/review',
   leadNotificationEmails: ['eliezio.consultor1@gmail.com', 'apnislopes@gmail.com'],
   emailSubject: 'NOVO LEAD ABIATAR CONECTA',
   defaultWhatsappNumber: '5511971118620', // Format for WhatsApp link

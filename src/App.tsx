@@ -12,6 +12,7 @@ import { FloorPlansSection } from './components/FloorPlansSection';
 import { MCMVSimulator } from './components/MCMVSimulator';
 import { FamilySection } from './components/FamilySection';
 import { LocationSection } from './components/LocationSection';
+import { TestimonialsSection } from './components/TestimonialsSection';
 import { FAQSection } from './components/FAQSection';
 import { ConversionBanner } from './components/ConversionBanner';
 import { Footer } from './components/Footer';
@@ -103,7 +104,10 @@ export default function App() {
         {/* 7. Strategic Location (5 min walk to Capão Redondo Metro Station) */}
         <LocationSection />
 
-        {/* 8. Frequently Asked Questions (MCMV, Pagamento, Localização) */}
+        {/* 8. Google Reviews & Client Testimonials for Eliezio Corretor */}
+        <TestimonialsSection onSimulateClick={() => scrollToForm('Avaliações / Simulação com Eliezio')} />
+
+        {/* 9. Frequently Asked Questions (MCMV, Pagamento, Localização) */}
         <FAQSection onSimulateClick={() => scrollToForm('Dúvidas no FAQ / Simulação MCMV')} />
 
         {/* 9. Conversion Section & Lead Capture Form */}

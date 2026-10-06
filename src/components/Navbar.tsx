@@ -55,6 +55,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onScrollToForm }) => {
           <a href="#simulador" className="hover:text-slate-900 transition-colors">
             Simulador MCMV
           </a>
+          <a href="#avaliacoes" className="hover:text-slate-900 transition-colors">
+            Avaliações
+          </a>
           <a href="#faq" className="hover:text-slate-900 transition-colors">
             Dúvidas
           </a>
@@ -127,6 +130,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onScrollToForm }) => {
             className="block text-sm text-slate-700 hover:text-amber-600 py-1 font-medium"
           >
             Simulador MCMV
+          </a>
+          <a
+            href="#avaliacoes"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block text-sm text-slate-700 hover:text-amber-600 py-1 font-medium"
+          >
+            Avaliações dos Clientes
           </a>
           <a
             href="#faq"
