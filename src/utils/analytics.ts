@@ -152,7 +152,7 @@ export function trackLeadSubmission(leadData: {
 
     // Google Ads conversion event
     window.gtag('event', 'conversion', {
-      send_to: 'AW-17116199141',
+      send_to: 'AW-18074952335',
       value: 100.0,
       currency: 'BRL',
       transaction_id: 'lead_' + Date.now()
