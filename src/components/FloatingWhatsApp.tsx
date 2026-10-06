@@ -40,9 +40,9 @@ export const FloatingWhatsApp: React.FC = () => {
                 <div className="w-2.5 h-2.5 bg-emerald-400 border-2 border-emerald-800 rounded-full absolute bottom-0 right-0 animate-pulse" />
               </div>
               <div>
-                <h4 className="font-bold text-xs sm:text-sm leading-tight">Eliezio Consultor</h4>
+                <h4 className="font-bold text-xs sm:text-sm leading-tight">Eliezio Corretor de Imóveis</h4>
                 <span className="text-[10px] sm:text-[11px] text-emerald-100 flex items-center gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-300" /> {PROJECT_DETAILS.displayWhatsappNumber} · Online
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-300" /> CRECI-SP: 209.709 · Online
                 </span>
               </div>
             </div>
@@ -120,7 +120,7 @@ export const FloatingWhatsApp: React.FC = () => {
             className="flex items-center gap-2 cursor-pointer flex-1"
           >
             <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
-            <span className="text-[11px] leading-tight">Fale com <strong>Eliezio</strong> no WhatsApp!</span>
+            <span className="text-[11px] leading-tight">Fale com <strong>Eliezio Corretor de Imóveis</strong>!</span>
           </div>
           <button
             onClick={(e) => {

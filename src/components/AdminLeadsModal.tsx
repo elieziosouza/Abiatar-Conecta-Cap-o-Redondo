@@ -114,7 +114,7 @@ export const AdminLeadsModal: React.FC<AdminLeadsModalProps> = ({ isOpen, onClos
     const rawNumber = lead.whatsapp.replace(/\D/g, '');
     const phone = rawNumber.startsWith('55') ? rawNumber : `55${rawNumber}`;
     const text = encodeURIComponent(
-      `Olá ${lead.name}! Sou o consultor Eliezio do empreendimento Abiatar Conecta. Recebi seu contato referente à unidade ${lead.unitInterest || '2 dormitórios'}. Como posso te ajudar?`
+      `Olá ${lead.name}! Sou Eliezio Corretor de Imóveis (CRECI-SP: 209.709). Recebi seu contato sobre o Abiatar Conecta referente à unidade ${lead.unitInterest || '2 dormitórios'}. Como posso te ajudar?`
     );
     window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
   };
@@ -133,7 +133,7 @@ export const AdminLeadsModal: React.FC<AdminLeadsModalProps> = ({ isOpen, onClos
             </div>
 
             <h3 className="text-xl font-bold font-display text-slate-900 mb-1">
-              Área Restrita do Consultor
+              Área Restrita do Corretor de Imóveis
             </h3>
             <p className="text-xs text-slate-500 mb-6">
               Digite o PIN de acesso para gerenciar leads e configurar tags de remarketing.
@@ -185,7 +185,7 @@ export const AdminLeadsModal: React.FC<AdminLeadsModalProps> = ({ isOpen, onClos
                 <div className="flex items-center gap-2">
                   <Shield className="w-5 h-5 text-amber-700" />
                   <h3 className="font-bold text-lg font-display text-slate-900">
-                    Painel do Consultor · Abiatar Conecta
+                    Painel do Corretor · Eliezio Corretor de Imóveis (CRECI-SP: 209.709)
                   </h3>
                 </div>
                 <p className="text-xs text-slate-500 mt-0.5">
@@ -401,7 +401,7 @@ export const AdminLeadsModal: React.FC<AdminLeadsModalProps> = ({ isOpen, onClos
 
             {/* Footer info */}
             <div className="bg-stone-50 border-t border-stone-200 p-3 px-5 text-[11px] text-slate-500 flex items-center justify-between">
-              <span>Abiatar Conecta · Painel Protegido do Consultor</span>
+              <span>Eliezio Corretor de Imóveis (CRECI-SP: 209.709) · Painel Protegido</span>
               <button onClick={onClose} className="hover:text-slate-900 underline">
                 Fechar Painel
               </button>

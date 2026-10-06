@@ -37,14 +37,14 @@ export const ConversionBanner: React.FC<ConversionBannerProps> = ({ formRef, sel
             </h2>
 
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Consulte a tabela com os consultores oficiais, parcele sua entrada diretamente durante a obra e conquiste as taxas e subsídios do <strong>Minha Casa Minha Vida</strong>.
+              Consulte a tabela com Eliezio Corretor de Imóveis (CRECI-SP: 209.709), parcele sua entrada diretamente durante a obra e conquiste as taxas e subsídios do <strong>Minha Casa Minha Vida</strong>.
             </p>
 
             {/* Checklist of guarantees */}
             <div className="space-y-2.5 sm:space-y-3 pt-1">
               <div className="flex items-center gap-3 text-xs sm:text-sm text-slate-700">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                <span>Atendimento direto com Eliezio e equipe oficial credenciada</span>
+                <span>Atendimento direto com Eliezio Corretor de Imóveis (CRECI-SP: 209.709)</span>
               </div>
               <div className="flex items-center gap-3 text-xs sm:text-sm text-slate-700">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -60,14 +60,14 @@ export const ConversionBanner: React.FC<ConversionBannerProps> = ({ formRef, sel
             <div className="p-4 sm:p-5 rounded-2xl bg-white border border-stone-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 shadow-sm">
               <div>
                 <span className="text-xs font-bold text-slate-900 block">Deseja falar agora mesmo?</span>
-                <span className="text-[11px] text-slate-500">Chame o consultor no WhatsApp: {PROJECT_DETAILS.displayWhatsappNumber}</span>
+                <span className="text-[11px] text-slate-500">Chame o corretor no WhatsApp: {PROJECT_DETAILS.displayWhatsappNumber}</span>
               </div>
               <button
                 onClick={handleWhatsapp}
                 className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2.5 rounded-xl text-xs flex items-center justify-center gap-2 transition shrink-0 shadow-xs"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>WhatsApp com Eliezio</span>
+                <span>WhatsApp com Eliezio Corretor</span>
               </button>
             </div>
           </div>

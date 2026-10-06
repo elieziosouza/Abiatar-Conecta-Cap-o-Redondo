@@ -31,6 +31,8 @@ export const PROJECT_DETAILS = {
   programs: ['Minha Casa Minha Vida', 'FGTS', 'Entrada Parcelada'],
   deliveryEstimate: 'Março de 2030',
   launchDate: 'Lançamento Exclusivo',
+  realtorName: 'Eliezio Corretor de Imóveis',
+  creci: 'CRECI-SP: 209.709',
   leadNotificationEmails: ['eliezio.consultor1@gmail.com', 'apnislopes@gmail.com'],
   emailSubject: 'NOVO LEAD ABIATAR CONECTA',
   defaultWhatsappNumber: '5511971118620', // Format for WhatsApp link

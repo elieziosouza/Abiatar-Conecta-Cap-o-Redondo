@@ -242,7 +242,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onSimulateClick }) => {
                 className="bg-white/10 hover:bg-white/20 text-white font-semibold px-4 py-3 rounded-xl text-xs sm:text-sm transition border border-white/20 flex items-center justify-center gap-2 whitespace-nowrap"
               >
                 <MessageCircle className="w-4 h-4 text-emerald-400" />
-                <span>WhatsApp com Eliezio</span>
+                <span>WhatsApp com Eliezio Corretor</span>
               </button>
             </div>
           </div>

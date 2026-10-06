@@ -60,8 +60,11 @@ export const Footer: React.FC<FooterProps> = ({ onSecretAdminTrigger }) => {
           {/* Direct Contacts */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900">
-              Consultoria & Atendimento
+              Eliezio Corretor de Imóveis
             </h4>
+            <div className="text-[11px] font-semibold text-amber-800 bg-amber-50 px-2 py-0.5 rounded border border-amber-200/80 inline-block">
+              CRECI-SP: 209.709
+            </div>
             <ul className="space-y-2 text-xs">
               <li className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-amber-600" />
@@ -94,7 +97,7 @@ export const Footer: React.FC<FooterProps> = ({ onSecretAdminTrigger }) => {
               Domingos e Feriados: 10h às 17h
             </p>
             <div className="p-3 bg-stone-50 rounded-xl border border-stone-200 text-[11px] text-slate-600">
-              Agende sua visita ao apartamento decorado com o consultor Eliezio.
+              Agende sua visita ao apartamento decorado com Eliezio Corretor de Imóveis (CRECI-SP: 209.709).
             </div>
           </div>
 
@@ -109,13 +112,13 @@ export const Footer: React.FC<FooterProps> = ({ onSecretAdminTrigger }) => {
             *As condições de financiamento imobiliário e concessão de subsídios vinculados ao Programa Minha Casa Minha Vida (MCMV) e utilização do saldo de FGTS estão sujeitas à análise prévia e aprovação de crédito pela Caixa Econômica Federal na data da contratação.
           </p>
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 border-t border-stone-200 gap-2">
-            <span>© {new Date().getFullYear()} Abiatar Conecta. Todos os direitos reservados.</span>
+            <span>© {new Date().getFullYear()} Eliezio Corretor de Imóveis. Todos os direitos reservados.</span>
             <span
               onClick={onSecretAdminTrigger}
-              className="cursor-default select-none"
+              className="cursor-default select-none font-medium"
               title=""
             >
-              Atendimento comercial credenciado: Eliezio Consultoria Imobiliária
+              Atendimento comercial credenciado: Eliezio Corretor de Imóveis · CRECI-SP: 209.709
             </span>
           </div>
         </div>

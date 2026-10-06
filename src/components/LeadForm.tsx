@@ -145,7 +145,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
         </h3>
         
         <p className="text-slate-600 text-sm max-w-md mx-auto mb-6">
-          Obrigado, <strong className="text-slate-900">{name}</strong>. Seus dados foram encaminhados diretamente para o consultor Eliezio e equipe comercial.
+          Obrigado, <strong className="text-slate-900">{name}</strong>. Seus dados foram encaminhados diretamente para Eliezio Corretor de Imóveis (CRECI-SP: 209.709).
         </p>
 
         <div className="bg-stone-50 rounded-xl p-4 border border-stone-200 text-left mb-6 text-xs text-slate-600 space-y-1.5">
@@ -308,7 +308,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
 
         <div className="flex items-center justify-center gap-1.5 text-[11px] text-slate-400 pt-1">
           <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-          <span>Privacidade garantida. Notificação enviada para consultoria oficial.</span>
+          <span>Privacidade garantida. Notificação enviada para Eliezio Corretor de Imóveis (CRECI-SP: 209.709).</span>
         </div>
       </form>
     </div>

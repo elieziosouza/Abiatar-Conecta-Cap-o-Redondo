@@ -105,7 +105,7 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToPlans }) => {
             <LeadForm
               variant="hero"
               title="Tabela & Condições Oficiais"
-              subtitle="Preencha seus dados para receber o book oficial com o consultor Eliezio."
+              subtitle="Preencha seus dados para receber o book oficial com Eliezio Corretor de Imóveis (CRECI-SP: 209.709)."
             />
           </div>
 
